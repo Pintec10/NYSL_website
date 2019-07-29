@@ -27,10 +27,6 @@ h4 {
     color: hsl(191,95%,17%);
 }
 
-.indented-section li {
-    margin-left: 25px;
-}
-
 
 /* ----- BANNER AREA ----- */
 .banner {
@@ -49,6 +45,7 @@ h4 {
     color: white;
     width: 100%;
     display: flex;
+    padding: 15px;
 }
 
 .title-left {
@@ -121,6 +118,10 @@ h4 {
 
 
 /* ----- TEXT STYLING ----- */
+.indented-section li {
+    margin-left: 25px;
+}
+
 .centered {
     text-align: center;
 }
@@ -336,6 +337,7 @@ counter-reset: list-counter;
 /* ----- TABLE STYLING ----- */
 table {
     margin-bottom: 50px;
+    margin-top: 10px;
     border-collapse: separate;
     border-spacing: 0;
 }
