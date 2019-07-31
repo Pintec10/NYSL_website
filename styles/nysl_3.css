@@ -295,7 +295,7 @@ h4 {
 
 
 /* ----- LISTS STYLING ----- */
-.first-level-list>li, .column>ul>li {
+.first-level-list>li {
     margin-top: 15px;
 }
 
@@ -365,6 +365,10 @@ td, th {
 
 .table-style-2 tr>td:nth-child(3) {
     padding: 8px 10px;
+}
+
+.table-style-2[width="226"] {
+    margin: auto;
 }
 
 /* ----- FORM STYLING ----- */

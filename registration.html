@@ -1,246 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <!--SOCIAL MEDIA ICONS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!---->
     <link href="https://fonts.googleapis.com/css?family=PT+Sans|Ubuntu+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/nysl_3.css">
-  <title>Registration</title>
+    <title>Registration</title>
 </head>
 
 <body>
 
-    <!--BANNER--> 
-<header class="banner">  
-    <div class="logo-container">
-      <img src="images/nysl_logo.png" alt="NYSL logo">
-    </div>
-    <div class="top-bar"> 
-      <h2 class="title-left">Northside Youth</h2>
-      <h2 class="title-right">Soccer League</h2>
-    </div>    
-</header>
+    <!--BANNER-->
+    <header class="banner">
+        <div class="logo-container">
+            <img src="images/nysl_logo.png" alt="NYSL logo">
+        </div>
+        <div class="top-bar">
+            <h2 class="title-left">Northside Youth</h2>
+            <h2 class="title-right">Soccer League</h2>
+        </div>
+    </header>
 
-      <!--NAVBAR-->
-<nav class="navbar">
+    <!--NAVBAR-->
+    <nav class="navbar">
         <div class="internal-links">
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About NYSL</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./rules.html">Rules</a></li>
-            <li><a href="./game_info.html">Game Info</a></li>
-            <li class="active">Registration</li>
-          </ul> 
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About NYSL</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./rules.html">Rules</a></li>
+                <li><a href="./game_info.html">Game Info</a></li>
+                <li class="active">Registration</li>
+            </ul>
         </div>
         <div>
-          <ul>
-            <li><a href="#" class="fa fa-facebook"></a></li>
-            <li><a href="#" class="fa fa-instagram"></a></li>
-            <li><a href="#" class="fa fa-youtube"></a></li>
-            <li><a href="#" class="fa fa-twitter"></a></li>
-          </ul>
+            <ul>
+                <li><a href="https://www.facebook.com" class="fa fa-facebook"></a></li>
+                <li><a href="https://www.instagram.com/" class="fa fa-instagram"></a></li>
+                <li><a href="https://www.youtube.com/" class="fa fa-youtube"></a></li>
+                <li><a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a></li>
+            </ul>
         </div>
-      </nav>
+    </nav>
 
-<main>
-<!--CONTENT-->
-<section class="full-column flex-container vertical align-cent">
-    <h3>Registration form</h3>
-    <form action="/show_data.html" method="GET">       
-        <div class="flex-container">
-            <div class="half-column">
-                <label for="first_name" class="left-floated">Player's First Name: </label>
-                <span class="fill-available"><input type="text" name="first_name" id="first_name" required></span>
-            </div>
-            <div class="half-column">
-                <label for="last_name" class="left-floated">Last Name: </label>
-                <span class="fill-available"><input type="text" name="last_name" id="last_name" required></span>
-            </div>
-        </div>
-
-        <div class="flex-container">
-            <div class="full-column">
-                <label for="address" class="left-floated">Street Address: </label>
-                <span class="fill-available"><input type="text" name="address" id="address" required></span>
-            </div>
-        </div> 
-
-        <div class="flex-container">
-            <div class="half-column">
-                <label for="city" class="left-floated">City: </label>
-                <span class="fill-available"><input type="text" name="city" id="city" required></span>
-            </div>
-            <div class="half-column"> 
-                <label for="zip_code" class="left-floated">Zip Code: </label>
-                <span class="fill-available"><input type="text" name="zip_code" id="zip_code" required></span>
-            </div>
-        </div>
-
-        <div class="flex-container">
-        <div class="half-column"> 
-            <label for="birth_date">Birth Date: </label>
-            <span><input type="date" name="birth_date" id="birth_date" size="10" required></span>
-        </div>
-            <div class="half-column">
-                <span>Gender:</span>
-                <input type="radio" name="gender" value="Male" id="Male" checked><label for="Male">Male</label>
-                <input type="radio" name="gender" value="Female" id="Female"><label for="Male">Female</label>
-            </div>
-        </div>
-
-        <div class="flex-container align-cent">
-            <span> Grade:</span>
-            <input type="radio" name="grade" value="pre-school" id="Pre-School" checked><label for="Pre-School">Pre-School</label>
-            <input type="radio" name="grade" value="1st" id="1st"><label for="1st">1<sup>st</sup></label>
-            <input type="radio" name="grade" value="2nd" id="2nd"><label for="2nd">2<sup>nd</sup></label>
-            <input type="radio" name="grade" value="3rd" id="3rd"><label for="3rd">3<sup>rd</sup></label>
-            <input type="radio" name="grade" value="4th" id="4th"><label for="4th">4<sup>th</sup></label>
-            <input type="radio" name="grade" value="5th" id="5th"><label for="5th">5<sup>th</sup></label>
-        </div>
-        
-        <div class="flex-container">
-            <div class="full-column">
-                <label for="parent" class="left-floated"> Parent/Guardian:</label>
-                <span class="fill-available"><input type="text" name="parent" id="parent" required></span>
-            </div>
-        </div>
-
-        <div class="flex-container">
-            <div class="half-column">
-                <label for="phone" class="left-floated">Contact Phone: </label>
-                <span class="fill-available"><input type="tel" name="phone" id="phone" required></span>
-            </div>
-            <div class="half-column">
-                <label for="email" class="left-floated">Contact Email: </label>
-                <span class="fill-available"><input type="email" name="email" id="email"></span>
-            </div>
-        </div>
- 
-        <div class="flex-container vertical">
-            <p class="bold">Which elementary schools do you live near?</p>
-            <div class="flex-container">
-                <div class="half-column">
-                    <label for="first_closest_school" class="bold">First closest school:</label>
-                    <select name="first_closest_school" id="first_closest_school">
-                        <option value="AJ_Katzenmaier">AJ Katzenmaier</option>
-                        <option value="Greenbay">Greenbay</option>
-                        <option value="Howard_A_Yeager">Howard A Yeager</option>
-                        <option value="Marjorie_P_Hart">Marjorie P Hart</option>
-                        <option value="North_Elementary">North Elementary</option>
-                        <option value="South_Elementary">South Elementary</option>
-                    </select>
-                </div>
-                <div class="half-column">
-                    <label for="second_closest_school" class="bold">Second closest school:</label>
-                    <select name="second_closest_school" id="second_closest_school">
-                        <option value="AJ_Katzenmaier" selected>AJ Katzenmaier</option>
-                        <option value="Greenbay">Greenbay</option>
-                        <option value="Howard_A_Yeager">Howard A Yeager</option>
-                        <option value="Marjorie_P_Hart">Marjorie P Hart</option>
-                        <option value="North_Elementary">North Elementary</option>
-                        <option value="South_Elementary">South Elementary</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-
-        <div class="flex-container">
-            <div class="flex-container-vertical half-column"> 
-                <p><span class="bold">What position(s) do you normally play?</span> (check all that apply)<p>
+    <main>
+        <!--CONTENT-->
+        <section class="full-column flex-container vertical align-cent">
+            <h3>Registration form</h3>
+            <form action="/show_data.html" method="GET">
                 <div class="flex-container">
-                    <div class="flex-container vertical">
-                        <div class="flex-container align-cent"><input type="checkbox" name="position_usual" value="forward_usual" id="forward_usual"><label for="forward_usual">Forward</label></div>
-                        <div class="flex-container align-cent"><input type="checkbox" name="position_usual" value="defense_usual" id="defense_usual"><label for="defense_usual">Defense</label></div>
+                    <div class="half-column">
+                        <label for="first_name" class="left-floated">Player's First Name: </label>
+                        <span class="fill-available"><input type="text" name="first_name" id="first_name"
+                                required></span>
                     </div>
-                    <div class="flex-container vertical">
-                        <div class="flex-container align-cent"><input type="checkbox" name="position_usual" value="midfield_usual" id="midfield_usual"><label for="midfield_usual">Midfield</label></div>
-                        <div class="flex-container align-cent"><input type="checkbox" name="position_usual" value="goalkeeper_usual" id="goalkeeper_usual"><label for="goalkeeper_usual">Goalkeeper</label></div>
-                    </div>   
+                    <div class="half-column">
+                        <label for="last_name" class="left-floated">Last Name: </label>
+                        <span class="fill-available"><input type="text" name="last_name" id="last_name" required></span>
+                    </div>
                 </div>
-            </div>
-            <div class="flex-container-vertical half-column"> 
-                <p><span class="bold">What position(s) do you want to play?</span> (check all that apply)</p>
+
                 <div class="flex-container">
-                    <div class="flex-container vertical">
-                        <div class="flex-container align-cent"><input type="checkbox" name="position_desired" value="forward_desired" id="forward_desired"><label for="forward_desired">Forward</label></div>
-                        <div class="flex-container align-cent"><input type="checkbox" name="position_desired" value="defense_desired" id="defense_desired"><label for="defense_desired">Defense</label></div>
+                    <div class="full-column">
+                        <label for="address" class="left-floated">Street Address: </label>
+                        <span class="fill-available"><input type="text" name="address" id="address" required></span>
                     </div>
-                    <div class="flex-container vertical">
-                        <div class="flex-container align-cent"><input type="checkbox" name="position_desired" value="midfield_desired" id="midfield_desired"><label for="midfield_desired">Midfield</label></div>
-                        <div class="flex-container align-cent"><input type="checkbox" name="position_desired" value="goalkeeper_desired" id="goalkeeper_desired"><label for="goalkeeper_desired">Goalkeeper</label></div>
-                    </div>   
                 </div>
-            </div>
-        </div>
 
-        <div class="flex-container vertical">
-            <label for="have_uniform" class="bold"><input type="checkbox" name="have_uniform" id="have_uniform">Already have a uniform</label>
-            <div class="flex-container">
-                <div class="half-column">
-                    <label for="jersey_size" class="bold">Jersey size:</label>
-                    <select name="jersey_size" id="jersey_size">
-                        <option value="youth_small">Youth Small</option> 
-                        <option value="youth_medium">Youth Medium</option>
-                        <option value="youth_large">Youth Large</option>
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                        <option value="extra-large">Extra-large</option>
-                    </select>
+                <div class="flex-container">
+                    <div class="half-column">
+                        <label for="city" class="left-floated">City: </label>
+                        <span class="fill-available"><input type="text" name="city" id="city" required></span>
+                    </div>
+                    <div class="half-column">
+                        <label for="zip_code" class="left-floated">Zip Code: </label>
+                        <span class="fill-available"><input type="text" name="zip_code" id="zip_code" required></span>
+                    </div>
                 </div>
-                <div class="half-column">
-                    <label for="shorts_size" class="bold">Shorts size:</label>
-                    <select name="shorts_size" id="shorts_size">
-                        <option value="youth_small">Youth Small</option> 
-                        <option value="youth_medium">Youth Medium</option>
-                        <option value="youth_large">Youth Large</option>
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                        <option value="extra-large">Extra-large</option>
-                    </select>
-                </div>
-            </div>
-        </div>
 
-        <div class="flex-container vertical">
-            <p class="bold">Permission to play</p> 
-            <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
-                    Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
-                    accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
-                    employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or
-                    on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
-                    sponsored activities, which transportation.</p>               
-            <p>By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the
-                    cancellation policy and agree to its terms.</p>
- 
-            <div class="flex-container top-padded">    
-                <div class="three-quarters-column">
-                    <label for="signature" class="left-floated">Parent/Guardian's Signature: </label>
-                    <span class="fill-available"><input type="text" name="signature" id="signature" disabled></span>
+                <div class="flex-container">
+                    <div class="half-column">
+                        <label for="birth_date">Birth Date: </label>
+                        <span><input type="date" name="birth_date" id="birth_date" size="10" required></span>
+                    </div>
+                    <div class="half-column">
+                        <span>Gender:</span>
+                        <input type="radio" name="gender" value="Male" id="Male" checked><label for="Male">Male</label>
+                        <input type="radio" name="gender" value="Female" id="Female"><label for="Male">Female</label>
+                    </div>
                 </div>
-                <div class="one-quarters-column">
-                    <label for="signature_date">Date: </label>
-                    <span><input type="date" name="signature_date" id="signature_date" required></span>
+
+                <div class="flex-container align-cent">
+                    <span> Grade:</span>
+                    <input type="radio" name="grade" value="pre-school" id="Pre-School" checked><label
+                        for="Pre-School">Pre-School</label>
+                    <input type="radio" name="grade" value="1st" id="1st"><label for="1st">1<sup>st</sup></label>
+                    <input type="radio" name="grade" value="2nd" id="2nd"><label for="2nd">2<sup>nd</sup></label>
+                    <input type="radio" name="grade" value="3rd" id="3rd"><label for="3rd">3<sup>rd</sup></label>
+                    <input type="radio" name="grade" value="4th" id="4th"><label for="4th">4<sup>th</sup></label>
+                    <input type="radio" name="grade" value="5th" id="5th"><label for="5th">5<sup>th</sup></label>
                 </div>
-            </div>
-        </div>
-        
-        <div class="centered">
-            <button name="submit" class="pushable-button">Submit Information</button>
-        </div>
 
-    </form>
-</section>
-</main>
+                <div class="flex-container">
+                    <div class="full-column">
+                        <label for="parent" class="left-floated"> Parent/Guardian:</label>
+                        <span class="fill-available"><input type="text" name="parent" id="parent" required></span>
+                    </div>
+                </div>
 
-<!-- FOOTER-->
-<footer class="footer">
-        <p>Header image made by <a href="https://pixabay.com/users/luvmybry-5739266/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2444978">luvmybry</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2444978">Pixabay</a></p>
-</footer>
+                <div class="flex-container">
+                    <div class="half-column">
+                        <label for="phone" class="left-floated">Contact Phone: </label>
+                        <span class="fill-available"><input type="tel" name="phone" id="phone" required></span>
+                    </div>
+                    <div class="half-column">
+                        <label for="email" class="left-floated">Contact Email: </label>
+                        <span class="fill-available"><input type="email" name="email" id="email"></span>
+                    </div>
+                </div>
+
+                <div class="flex-container vertical">
+                    <p class="bold">Which elementary schools do you live near?</p>
+                    <div class="flex-container">
+                        <div class="half-column">
+                            <label for="first_closest_school" class="bold">First closest school:</label>
+                            <select name="first_closest_school" id="first_closest_school">
+                                <option value="AJ_Katzenmaier">AJ Katzenmaier</option>
+                                <option value="Greenbay">Greenbay</option>
+                                <option value="Howard_A_Yeager">Howard A Yeager</option>
+                                <option value="Marjorie_P_Hart">Marjorie P Hart</option>
+                                <option value="North_Elementary">North Elementary</option>
+                                <option value="South_Elementary">South Elementary</option>
+                            </select>
+                        </div>
+                        <div class="half-column">
+                            <label for="second_closest_school" class="bold">Second closest school:</label>
+                            <select name="second_closest_school" id="second_closest_school">
+                                <option value="AJ_Katzenmaier" selected>AJ Katzenmaier</option>
+                                <option value="Greenbay">Greenbay</option>
+                                <option value="Howard_A_Yeager">Howard A Yeager</option>
+                                <option value="Marjorie_P_Hart">Marjorie P Hart</option>
+                                <option value="North_Elementary">North Elementary</option>
+                                <option value="South_Elementary">South Elementary</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-container">
+                    <div class="flex-container-vertical half-column">
+                        <p><span class="bold">What position(s) do you normally play?</span> (check all that apply)<p>
+                                <div class="flex-container">
+                                    <div class="flex-container vertical">
+                                        <div class="flex-container align-cent"><input type="checkbox"
+                                                name="position_usual" value="forward_usual" id="forward_usual"><label
+                                                for="forward_usual">Forward</label></div>
+                                        <div class="flex-container align-cent"><input type="checkbox"
+                                                name="position_usual" value="defense_usual" id="defense_usual"><label
+                                                for="defense_usual">Defense</label></div>
+                                    </div>
+                                    <div class="flex-container vertical">
+                                        <div class="flex-container align-cent"><input type="checkbox"
+                                                name="position_usual" value="midfield_usual" id="midfield_usual"><label
+                                                for="midfield_usual">Midfield</label></div>
+                                        <div class="flex-container align-cent"><input type="checkbox"
+                                                name="position_usual" value="goalkeeper_usual"
+                                                id="goalkeeper_usual"><label for="goalkeeper_usual">Goalkeeper</label>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="flex-container-vertical half-column">
+                        <p><span class="bold">What position(s) do you want to play?</span> (check all that apply)</p>
+                        <div class="flex-container">
+                            <div class="flex-container vertical">
+                                <div class="flex-container align-cent"><input type="checkbox" name="position_desired"
+                                        value="forward_desired" id="forward_desired"><label
+                                        for="forward_desired">Forward</label></div>
+                                <div class="flex-container align-cent"><input type="checkbox" name="position_desired"
+                                        value="defense_desired" id="defense_desired"><label
+                                        for="defense_desired">Defense</label></div>
+                            </div>
+                            <div class="flex-container vertical">
+                                <div class="flex-container align-cent"><input type="checkbox" name="position_desired"
+                                        value="midfield_desired" id="midfield_desired"><label
+                                        for="midfield_desired">Midfield</label></div>
+                                <div class="flex-container align-cent"><input type="checkbox" name="position_desired"
+                                        value="goalkeeper_desired" id="goalkeeper_desired"><label
+                                        for="goalkeeper_desired">Goalkeeper</label></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-container vertical">
+                    <label for="have_uniform" class="bold"><input type="checkbox" name="have_uniform"
+                            id="have_uniform">Already have a uniform</label>
+                    <div class="flex-container">
+                        <div class="half-column">
+                            <label for="jersey_size" class="bold">Jersey size:</label>
+                            <select name="jersey_size" id="jersey_size">
+                                <option value="youth_small">Youth Small</option>
+                                <option value="youth_medium">Youth Medium</option>
+                                <option value="youth_large">Youth Large</option>
+                                <option value="small">Small</option>
+                                <option value="medium">Medium</option>
+                                <option value="large">Large</option>
+                                <option value="extra-large">Extra-large</option>
+                            </select>
+                        </div>
+                        <div class="half-column">
+                            <label for="shorts_size" class="bold">Shorts size:</label>
+                            <select name="shorts_size" id="shorts_size">
+                                <option value="youth_small">Youth Small</option>
+                                <option value="youth_medium">Youth Medium</option>
+                                <option value="youth_large">Youth Large</option>
+                                <option value="small">Small</option>
+                                <option value="medium">Medium</option>
+                                <option value="large">Large</option>
+                                <option value="extra-large">Extra-large</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-container vertical">
+                    <p class="bold">Permission to play</p>
+                    <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by
+                        all the rules of the Northside Youth
+                        Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer
+                        and in consideration for the “League”
+                        accepting the registrant for its soccer programs and activities, I hereby release, discharge,
+                        and/or otherwise indemnify NYSL, their
+                        employees and associated personnel and volunteers, including the facilities used for practices
+                        and games, against any claim by or
+                        on behalf of the registrant as a result of the registrant’s participation in the program and/or
+                        being transported to or from NYSL
+                        sponsored activities, which transportation.</p>
+                    <p>By signing below, I hereby agree and authorize the above. In addition, by signing below, I also
+                        acknowledge that I have read the
+                        cancellation policy and agree to its terms.</p>
+
+                    <div class="flex-container top-padded">
+                        <div class="three-quarters-column">
+                            <label for="signature" class="left-floated">Parent/Guardian's Signature: </label>
+                            <span class="fill-available"><input type="text" name="signature" id="signature"
+                                    disabled></span>
+                        </div>
+                        <div class="one-quarters-column">
+                            <label for="signature_date">Date: </label>
+                            <span><input type="date" name="signature_date" id="signature_date" required></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="centered">
+                    <button name="submit" class="pushable-button">Submit Information</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER-->
+    <footer class="footer">
+        <p>Header image made by <a
+                href="https://pixabay.com/users/luvmybry-5739266/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2444978">luvmybry</a>
+            from <a
+                href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2444978">Pixabay</a>
+        </p>
+    </footer>
 
 </body>
+
 </html>
